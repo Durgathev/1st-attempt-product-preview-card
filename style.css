@@ -1,0 +1,130 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat,Fraunces;
+  box-sizing: border-box;
+}
+:root{
+  --dark_cyan :  hsl(158, 36%, 37%);
+  --cream : hsl(30, 38%, 92%);
+  --dark_blue: hsl(212, 21%, 14%);
+  --grayish_blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+}
+body{
+  background-color: var(--cream);
+  width: 100%;
+  height: 100vh;
+}
+
+.main{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  width: 620px;
+  height: 420px;
+  background:var(--white);
+  border-radius: 10px;
+  display: flex;
+  z-index: 10;
+}
+.image{
+  width: 100%;
+  height: 100%;
+  background: url(images/image-product-desktop.jpg) no-repeat;
+  background-size:cover;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.paragraph{
+  width:100%;
+  padding: 30px;
+}
+.paragraph span{
+  display: inline-block;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  color:var(--grayish_blue);
+}
+.paragraph .heading{
+  letter-spacing: 2px;
+  font-size: 30px;
+  font-weight: 700;
+  color:var(--dark_blue);
+}
+.paragraph .para{
+  padding-top: 20px;
+  font-size: 14px;
+  color: var(--grayish_blue);
+}
+
+.paragraph .price{
+  padding-top: 20px;
+  font-size: 30px;
+  font-weight: 500;
+  color:var(--dark_cyan);
+  padding-bottom: 20px;
+
+}
+.paragraph .price .discount{
+  vertical-align: middle;
+  font-size: 15px;
+  padding-left: 8px;
+  color:var(--grayish_blue);
+
+}
+.paragraph .cart{
+  background: var(--dark_cyan);
+  padding:10px;
+  border-radius: 5px;
+  text-align: center;
+}
+.paragraph .cart a {
+  text-decoration: none;
+  color:var(--white);
+}
+.paragraph .cart img{
+  vertical-align: middle;
+  padding-right: 5px;
+}
+.paragraph .cart:hover{
+  background-color:#0f3325;
+}
+footer{
+  position:absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 11px;
+  color:var(--grayish_blue);
+  padding-bottom: 5px;
+}
+
+footer a{
+  text-decoration: none;
+  color:purple;
+}
+footer .author{
+  color:purple;
+}
+@media (max-width:375px) {
+  .main{
+    display: flex;
+    flex-direction:column;
+    width:95%;
+    height: 95%;
+  }
+  .image{
+    width: 100%;
+    height: 100%;
+    background: url(images/image-product-mobile.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 0px;
+  }
+
+}
