@@ -48,11 +48,12 @@ body{
   padding-bottom: 20px;
   color:var(--grayish_blue);
 }
-.paragraph .heading{
-  letter-spacing: 2px;
-  font-size: 30px;
-  font-weight: 700;
-  color:var(--dark_blue);
+.paragraph .heading {
+    font-family: Fraunces;
+    letter-spacing: 2px;
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--dark_blue);
 }
 .paragraph .para{
   padding-top: 20px;
